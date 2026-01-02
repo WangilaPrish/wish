@@ -16,23 +16,23 @@ export default function Dedication(): JSX.Element {
 
                 {/* Dedication Message */}
                 <div className="bg-white bg-opacity-15 backdrop-blur-md rounded-3xl p-6 mb-8 border-2 border-white border-opacity-40 shadow-2xl md:p-12">
-                    <p className="text-2xl text-white font-light mb-4 leading-relaxed">
+                    <p className="text-lg text-white font-light mb-4 leading-relaxed">
                         Marcel, on this special day, I want you to know...
                     </p>
 
                     <div className="space-y-4 mb-8">
-                        <p className="text-xl text-white font-light">
+                        <p className="text-lg text-white font-light leading-relaxed">
                             You are the light that brightens my darkest days,
                         </p>
-                        <p className="text-xl text-white font-light">
+                        <p className="text-lg text-white font-light leading-relaxed">
                             The warmth that melts away the cold,
                         </p>
-                        <p className="text-xl text-white font-light">
+                        <p className="text-lg text-white font-light leading-relaxed">
                             The reason my heart smiles every single day.
                         </p>
                     </div>
 
-                    <p className="text-lg text-white font-light mb-4">
+                    <p className="text-lg text-white font-light mb-4 leading-relaxed">
                         Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 🎊💕
                     </p>
 
