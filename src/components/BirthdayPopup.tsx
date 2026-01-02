@@ -48,7 +48,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                         <div className="flex gap-4 justify-center flex-wrap">
                             <button
                                 onClick={handleFirstYes}
-                                className="group relative px-10 py-4 bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-green-500/50 active:scale-95 overflow-hidden"
+                                className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 animate-slide-shine"></div>
@@ -56,7 +56,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                             </button>
                             <button
                                 onClick={() => setShowFirstNo(true)}
-                                className="group relative px-10 py-4 bg-gradient-to-r from-rose-500 via-red-500 to-pink-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-red-500/50 active:scale-95 overflow-hidden"
+                                className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 <span className="relative">
@@ -80,7 +80,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                         <div className="flex gap-4 justify-center flex-wrap">
                             <button
                                 onClick={handleSecondYes}
-                                className="group relative px-10 py-4 bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-green-500/50 active:scale-95 overflow-hidden"
+                                className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 animate-slide-shine"></div>
@@ -88,7 +88,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                             </button>
                             <button
                                 onClick={() => setShowSecondNo(true)}
-                                className="group relative px-10 py-4 bg-gradient-to-r from-rose-500 via-red-500 to-pink-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-red-500/50 active:scale-95 overflow-hidden"
+                                className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 <span className="relative">
@@ -106,7 +106,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
 
                 {step === 'final_message' && (
                     <div className="text-center animate-slide-up relative z-10">
-                        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent mb-6 animate-glow">
+                        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent mb-6 animate-glow">
                             I love you Marcel
                         </h2>
                         <p className="text-lg md:text-xl text-cyan-100 mb-8">
@@ -114,7 +114,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                         </p>
                         <button
                             onClick={onClose}
-                            className="group relative px-10 py-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 text-blue-900 font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
+                            className="group relative px-10 py-4 bg-gradient-to-r from-cyan-400 to-blue-400 text-blue-900 font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
                         >
                             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-50 animate-slide-shine"></div>
