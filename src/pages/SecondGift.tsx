@@ -1,9 +1,15 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function SecondGift(): JSX.Element {
     const navigate = useNavigate()
     const touchStartX = useRef<number | null>(null)
+    const [showPerfume, setShowPerfume] = useState(false)
+
+    useEffect(() => {
+        const timer = window.setTimeout(() => setShowPerfume(true), 60000)
+        return () => window.clearTimeout(timer)
+    }, [])
 
     const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
         touchStartX.current = event.touches[0]?.clientX ?? null
@@ -49,10 +55,14 @@ export default function SecondGift(): JSX.Element {
 
             <div className="max-w-3xl w-full bg-white/12 backdrop-blur-xl border border-white/25 rounded-3xl shadow-2xl p-10 text-center text-white">
                 <p className="text-sm uppercase tracking-[0.3em] text-fuchsia-200 mb-4">Second Gift</p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-xl">Your next delight ✨</h1>
-                <p className="text-lg md:text-xl leading-relaxed text-white/90 mb-8">
-                    Here comes gift number two. May this one make you smile even wider and remind you how appreciated you are.
+                <p className="text-base md:text-lg leading-relaxed text-white/90 mb-8">
+                    You said you just need two perfumes, right? Actually, the perfume I gave you to smell—you weren&apos;t supposed to take it, but you did. Because you loved it, I had no option but to get you the full bottle. You now have two signature scents. Now turn back to get your second gift.
                 </p>
+                {showPerfume && (
+                    <div className="mt-6 rounded-2xl border border-fuchsia-200/60 bg-white/10 px-6 py-4 mb-4 text-center shadow-lg backdrop-blur">
+                        <p className="text-lg font-semibold tracking-wide text-white">RAVE NOW PERFUME</p>
+                    </div>
+                )}
                 <div className="flex gap-4 justify-center flex-wrap">
                     <button
                         onClick={() => navigate('/')}
