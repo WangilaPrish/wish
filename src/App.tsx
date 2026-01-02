@@ -1,10 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Dedication from './pages/Dedication'
 import FirstGift from './pages/FirstGift'
-import SecondGift from './pages/SecondGift'
-import ThirdGift from './pages/ThirdGift'
 import Gift from './pages/Gift'
 import Landing from './pages/Landing'
+import SecondGift from './pages/SecondGift'
+import ThirdGift from './pages/ThirdGift'
 
 function App(): JSX.Element {
     return (
