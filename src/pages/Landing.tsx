@@ -79,7 +79,7 @@ export default function Landing(): JSX.Element {
                         }}
                     >
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                        <span className="relative">Pop-Up</span>
+                        <span className="relative">Last but not least</span>
                     </button>
                 </div>
 
