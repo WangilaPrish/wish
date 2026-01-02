@@ -1,20 +1,45 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function FirstGift(): JSX.Element {
     const navigate = useNavigate()
     const [showSketchPad, setShowSketchPad] = useState(false)
+    const touchStartX = useRef<number | null>(null)
 
     useEffect(() => {
         const timer = window.setTimeout(() => setShowSketchPad(true), 60000)
         return () => window.clearTimeout(timer)
     }, [])
 
+    const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+        touchStartX.current = event.touches[0]?.clientX ?? null
+    }
+
+    const handleTouchEnd = (event: React.TouchEvent<HTMLDivElement>) => {
+        if (touchStartX.current === null) return
+
+        const endX = event.changedTouches[0]?.clientX ?? touchStartX.current
+        const delta = endX - touchStartX.current
+        const threshold = 48
+
+        if (delta > threshold) {
+            navigate('/gift/third')
+        } else if (delta < -threshold) {
+            navigate('/gift/second')
+        }
+
+        touchStartX.current = null
+    }
+
     return (
-        <div className="relative min-h-screen bg-gradient-to-br from-cyan-700 via-blue-900 to-blue-950 flex items-center justify-center p-6">
+        <div
+            className="relative min-h-screen bg-gradient-to-br from-cyan-700 via-blue-900 to-blue-950 flex items-center justify-center p-6"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+        >
             <button
                 onClick={() => navigate('/gift/third')}
-                className="absolute left-4 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white/80 text-blue-900 text-2xl font-bold shadow-lg border border-white/60 hover:-translate-y-[52%] hover:shadow-cyan-300/50 transition-all duration-300"
+                className="hidden md:flex items-center justify-center absolute left-4 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white/80 text-blue-900 text-2xl font-bold shadow-lg border border-white/60 hover:-translate-y-[52%] hover:shadow-cyan-300/50 transition-all duration-300"
                 aria-label="Previous gift"
             >
                 ‹
@@ -22,7 +47,7 @@ export default function FirstGift(): JSX.Element {
 
             <button
                 onClick={() => navigate('/gift/second')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white/80 text-blue-900 text-2xl font-bold shadow-lg border border-white/60 hover:-translate-y-[52%] hover:shadow-cyan-300/50 transition-all duration-300"
+                className="hidden md:flex items-center justify-center absolute right-4 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white/80 text-blue-900 text-2xl font-bold shadow-lg border border-white/60 hover:-translate-y-[52%] hover:shadow-cyan-300/50 transition-all duration-300"
                 aria-label="Next gift"
             >
                 ›
