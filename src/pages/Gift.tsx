@@ -8,7 +8,7 @@ export default function Gift(): JSX.Element {
             <div className="max-w-2xl w-full text-center">
                 {/* Gift Box Animation */}
                 <div className="mb-8">
-                    <div className="text-9xl animate-bounce mb-6">🎁</div>
+                    <div className="text-5xl animate-bounce mb-6">🎁</div>
                     <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
                         Your Gift, Marcel
                     </h1>
