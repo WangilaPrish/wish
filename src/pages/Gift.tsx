@@ -41,6 +41,22 @@ export default function Gift(): JSX.Element {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-700 flex items-center justify-center p-4">
             <div className="max-w-2xl w-full text-center">
+                {showUngrateful && (
+                    <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-20">
+                        <div className="relative bg-white/90 text-blue-950 rounded-3xl p-8 shadow-2xl max-w-md w-full border border-white/60">
+                            <button
+                                onClick={() => setShowUngrateful(false)}
+                                className="absolute right-3 top-3 h-10 w-10 rounded-full border border-blue-200/80 text-blue-800 font-bold shadow-sm hover:bg-blue-50 active:scale-95 transition"
+                                aria-label="Close ungrateful message"
+                            >
+                                ×
+                            </button>
+                            <h2 className="text-2xl font-bold mb-3">You are ungrateful.</h2>
+                            <p className="text-base text-blue-900/80">Come back when you appreciate my effort.</p>
+                        </div>
+                    </div>
+                )}
+
                 {showPopup && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-20">
                         <div className="bg-white/90 text-blue-950 rounded-3xl p-8 shadow-2xl max-w-md w-full border border-white/60">
@@ -91,12 +107,6 @@ export default function Gift(): JSX.Element {
                             <span className="relative text-lg">No</span>
                         </button>
                     </div>
-
-                    {showUngrateful && (
-                        <div className="text-lg font-semibold text-white drop-shadow-lg">
-                            You are ungrateful.
-                        </div>
-                    )}
 
                 </div>
 
