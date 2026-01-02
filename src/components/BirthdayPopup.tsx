@@ -37,6 +37,17 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
         >
             {/* Modal Content */}
             <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-900 rounded-3xl shadow-2xl p-8 md:p-12 max-w-md w-full z-10 backdrop-blur-sm border-2 border-cyan-400 border-opacity-40 animate-modal-pop relative overflow-hidden">
+                {/* Close Button */}
+                <button
+                    onClick={onClose}
+                    className="absolute top-4 right-4 z-20 text-white hover:text-cyan-300 transition-all duration-300 transform hover:scale-110 hover:rotate-90 active:scale-95"
+                    aria-label="Close popup"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
                 {/* Animated background effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-10 animate-shimmer"></div>
 
