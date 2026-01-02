@@ -33,11 +33,11 @@ export default function Gift(): JSX.Element {
                     <div className="flex gap-4 justify-center mb-6">
                         <button className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden">
                             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                            <span className="relative text-lg">Yes! 💙</span>
+                            <span className="relative text-lg">Yes!</span>
                         </button>
                         <button className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden">
                             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                            <span className="relative text-lg">No 😢</span>
+                            <span className="relative text-lg">No</span>
                         </button>
                     </div>
 
