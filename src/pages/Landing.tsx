@@ -53,7 +53,7 @@ export default function Landing(): JSX.Element {
                         }}
                     >
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                        <span className="relative">Your Gift</span>
+                        <span className="relative">Gifts</span>
                     </button>
 
                     {/* Dedication Button */}
