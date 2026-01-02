@@ -15,12 +15,12 @@ export default function Dedication(): JSX.Element {
                 </div>
 
                 {/* Dedication Message */}
-                <div className="bg-white bg-opacity-15 backdrop-blur-md rounded-3xl p-12 mb-8 border-2 border-white border-opacity-40 shadow-2xl">
-                    <p className="text-2xl text-white font-light mb-8 leading-relaxed">
+                <div className="bg-white bg-opacity-15 backdrop-blur-md rounded-3xl p-6 mb-8 border-2 border-white border-opacity-40 shadow-2xl md:p-12">
+                    <p className="text-2xl text-white font-light mb-4 leading-relaxed">
                         Marcel, on this special day, I want you to know...
                     </p>
 
-                    <div className="space-y-6 mb-8">
+                    <div className="space-y-4 mb-8">
                         <p className="text-xl text-white font-light">
                             You are the light that brightens my darkest days,
                         </p>
@@ -32,11 +32,9 @@ export default function Dedication(): JSX.Element {
                         </p>
                     </div>
 
-                    <div className="text-3xl font-bold text-yellow-200 mb-8 drop-shadow-lg">
-                        Happy Birthday to the one who means everything to me ✨
-                    </div>
 
-                    <p className="text-lg text-white font-light mb-8">
+
+                    <p className="text-lg text-white font-light mb-4">
                         Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 🎊💕
                     </p>
 
