@@ -10,7 +10,7 @@ export default function Landing(): JSX.Element {
         <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-700 flex items-center justify-center p-4">
             <div className="text-center max-w-4xl w-full">
                 {/* Animated Title */}
-                <div className="mb-8 animate-bounce">
+                <div className="mb-8 animate-bounce mt-6">
                     <h1 className="text-6xl md:text-7xl font-bold text-white mb-2 drop-shadow-lg">
                         Happy Birthday
                     </h1>
