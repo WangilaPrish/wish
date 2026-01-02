@@ -35,7 +35,7 @@ export default function Landing(): JSX.Element {
                                 As you blow out your candles, I wish you boundless joy, lasting health, and success that reaches beyond your wildest hopes. 2026 already feels full of promise for us.
                             </p>
                             <p className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed font-light">
-                                Thank you for being my partner, my home, and my greatest adventure. I love you more than words can say. Happy Birthday, my handsome. <span className="inline-block text-2xl animate-pulse">❤️</span>
+                                Thank you for being my partner, my home, and my greatest adventure. I love you more than words can say. Happy Birthday, my handsome. <span className="inline-block text-2xl animate-pulse">💙</span>
                             </p>
                         </div>
                     </div>

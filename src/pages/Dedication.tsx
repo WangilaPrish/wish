@@ -33,7 +33,7 @@ export default function Dedication(): JSX.Element {
                     </div>
 
                     <p className="text-xl text-white font-light mb-4 leading-relaxed">
-                        Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 🎊💕
+                        Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 💙
                     </p>
 
                     {/* YouTube Video Embed */}

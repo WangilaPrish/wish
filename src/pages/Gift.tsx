@@ -25,15 +25,15 @@ export default function Gift(): JSX.Element {
                     </div>
 
                     <p className="text-xl text-white font-light mb-8">
-                        You make every moment brighter, every day better, and every memory unforgettable. Your smile, your laugh, your presence—that's the best gift in the world to me. 💝
+                        You make every moment brighter, every day better, and every memory unforgettable. Your smile, your laugh, your presence—that's the best gift in the world to me. �
                     </p>
 
                     {/* Confetti-like elements */}
                     <div className="grid grid-cols-4 gap-4 mb-8">
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0s' }}>💕</div>
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.1s' }}>✨</div>
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.2s' }}>⭐</div>
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.3s' }}>💕</div>
+                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0s' }}>�</div>
+                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.1s' }}>💙</div>
+                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.2s' }}>💙</div>
+                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.3s' }}>💙</div>
                     </div>
                 </div>
 
