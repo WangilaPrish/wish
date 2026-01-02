@@ -74,7 +74,6 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
 
                 {step === 'question2' && (
                     <div className="text-center animate-slide-up relative z-10">
-                        <div className="text-7xl mb-6 animate-spin-slow">✨</div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 animate-glow">
                             Was this the best ever?
                         </h2>
@@ -107,7 +106,6 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
 
                 {step === 'final_message' && (
                     <div className="text-center animate-slide-up relative z-10">
-                        <div className="text-8xl mb-6 animate-heart-beat">💕</div>
                         <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent mb-6 animate-glow">
                             I love you Marcel
                         </h2>
