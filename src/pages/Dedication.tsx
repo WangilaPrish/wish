@@ -8,7 +8,7 @@ export default function Dedication(): JSX.Element {
             <div className="max-w-3xl w-full text-center">
                 {/* Heart Animation */}
                 <div className="mb-8">
-                    <div className="text-9xl animate-pulse mb-6">💖</div>
+                    <div className="text-6xl animate-pulse mb-6">💖</div>
                     <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
                         For You, Marcel
                     </h1>
@@ -41,13 +41,7 @@ export default function Dedication(): JSX.Element {
                     </p>
 
                     {/* Decorative Elements */}
-                    <div className="grid grid-cols-5 gap-2 mt-8 text-3xl">
-                        <div className="animate-bounce" style={{ animationDelay: '0s' }}>💕</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.1s' }}>💫</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.2s' }}>💕</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.3s' }}>💫</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.4s' }}>💕</div>
-                    </div>
+
                 </div>
 
                 {/* Back Button */}
