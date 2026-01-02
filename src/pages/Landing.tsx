@@ -20,9 +20,26 @@ export default function Landing(): JSX.Element {
                 </div>
 
                 {/* Subtitle */}
-                <p className="text-xl md:text-2xl text-white mb-16 drop-shadow-md font-light">
-                    Today is YOUR special day! Let's celebrate you 🎂✨
-                </p>
+                <div
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="max-w-4xl mx-auto mb-8"
+                >
+                    <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-8 sm:p-10 md:p-12 lg:p-14 border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-blue-500/10 hover:shadow-[0_0_50px]">
+                        <div className="space-y-6">
+                            <p className="text-white/95 text-base sm:text-lg md:text-xl leading-relaxed font-light">
+                                Today is all about celebrating you, the kindest, most loving soul I know. Being with you has turned my world upside down in the best way: every smile, quiet moment, and shared dream fills me with gratitude.
+                            </p>
+                            <p className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed font-light">
+                                As you blow out your candles, I wish you boundless joy, lasting health, and success that reaches beyond your wildest hopes. 2026 already feels full of promise for us.
+                            </p>
+                            <p className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed font-light">
+                                Thank you for being my partner, my home, and my greatest adventure. I love you more than words can say. Happy Birthday, my handsome. <span className="inline-block text-2xl animate-pulse">❤️</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Button Container */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -36,7 +53,6 @@ export default function Landing(): JSX.Element {
                         }}
                     >
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                        <span className="relative block text-4xl mb-2">🎁</span>
                         <span className="relative">Your Gift</span>
                     </button>
 
@@ -50,7 +66,6 @@ export default function Landing(): JSX.Element {
                         }}
                     >
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                        <span className="relative block text-4xl mb-2">💝</span>
                         <span className="relative">Dedication</span>
                     </button>
 
@@ -64,17 +79,10 @@ export default function Landing(): JSX.Element {
                         }}
                     >
                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                        <span className="relative block text-4xl mb-2">💬</span>
                         <span className="relative">Pop-Up</span>
                     </button>
                 </div>
 
-                {/* Decorative Elements */}
-                <div className="flex justify-center gap-4 text-4xl animate-pulse">
-                    <span>🎈</span>
-                    <span>🎊</span>
-                    <span>🎈</span>
-                </div>
             </div>
 
             {/* Birthday Popup Modal */}

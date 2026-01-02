@@ -4,7 +4,7 @@ export default function Gift(): JSX.Element {
     const navigate = useNavigate()
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-700 flex items-center justify-center p-4">
             <div className="max-w-2xl w-full text-center">
                 {/* Gift Box Animation */}
                 <div className="mb-8">
@@ -40,7 +40,7 @@ export default function Gift(): JSX.Element {
                 {/* Back Button */}
                 <button
                     onClick={() => navigate('/')}
-                    className="px-8 py-4 bg-white text-purple-600 font-bold text-lg rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 active:scale-95 drop-shadow-lg"
+                    className="px-8 py-4 bg-cyan-400 text-blue-900 font-bold text-lg rounded-full hover:bg-cyan-300 transition-all duration-300 transform hover:scale-105 active:scale-95 drop-shadow-lg"
                 >
                     ← Back to Home
                 </button>

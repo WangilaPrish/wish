@@ -70,11 +70,11 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
             </div>
 
             {/* Modal Content */}
-            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-md w-full z-10 backdrop-blur-sm">
+            <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-3xl shadow-2xl p-8 md:p-12 max-w-md w-full z-10 backdrop-blur-sm border-2 border-cyan-400 border-opacity-30">
                 {step === 'question1' && (
                     <div className="text-center animate-fade-in">
                         <div className="text-6xl mb-6">🎂</div>
-                        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                        <h2 className="text-3xl font-bold text-white mb-6">
                             Did you like your birthday?
                         </h2>
                         <div className="flex gap-4 justify-center">
@@ -103,7 +103,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                 {step === 'question2' && (
                     <div className="text-center animate-fade-in">
                         <div className="text-6xl mb-6">✨</div>
-                        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                        <h2 className="text-3xl font-bold text-white mb-6">
                             Was this the best ever?
                         </h2>
                         <div className="flex gap-4 justify-center">
@@ -132,15 +132,15 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                 {step === 'final_message' && (
                     <div className="text-center animate-fade-in">
                         <div className="text-8xl mb-6 animate-bounce">💕</div>
-                        <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-6">
+                        <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent mb-6">
                             I love you Marcel
                         </h2>
-                        <p className="text-lg text-gray-700 mb-8">
+                        <p className="text-lg text-white mb-8">
                             Happy Birthday to the most amazing person in my life! 🎊🎉
                         </p>
                         <button
                             onClick={onClose}
-                            className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
+                            className="px-8 py-3 bg-gradient-to-r from-cyan-400 to-blue-400 text-blue-900 font-bold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
                         >
                             Back to Home
                         </button>
