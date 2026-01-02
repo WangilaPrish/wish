@@ -10,7 +10,7 @@ export default function Gift(): JSX.Element {
                 <div className="mb-8">
 
                     <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-                        Your Gift, Marcel
+                        Gifting time ...
                     </h1>
                 </div>
 
