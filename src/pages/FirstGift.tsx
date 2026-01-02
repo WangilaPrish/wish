@@ -23,9 +23,8 @@ export default function FirstGift(): JSX.Element {
 
             <div className="max-w-3xl w-full bg-white/15 backdrop-blur-xl border border-white/30 rounded-3xl shadow-2xl p-10 text-center text-white">
                 <p className="text-sm uppercase tracking-[0.3em] text-cyan-200 mb-4">First Gift</p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-xl">Here is your first surprise 🎁</h1>
                 <p className="text-lg md:text-xl leading-relaxed text-white/90 mb-8">
-                    This is the first of your gifts. Take a moment to enjoy it—and when you&apos;re ready, keep exploring for more surprises.
+                    You are a great artist, Marcel. I don&apos;t know why you rarely do your sketches, but don&apos;t worry—this first gift is for you to grow your talent. Make as many sketches as possible; I want to see them, of course. You are talented, Marcel. Now look back to have your first gift.
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">
                     <button
