@@ -60,19 +60,19 @@ export default function FirstGift(): JSX.Element {
                 </p>
                 {showSketchPad && (
                     <div className="mt-6 rounded-2xl border border-cyan-200/60 bg-white/10 px-6 py-4 mb-4 text-center shadow-lg backdrop-blur">
-                        <p className="text-lg font-semibold tracking-wide text-white">SKETCH PAD</p>
+                        <p className="text-base font-semibold tracking-wide text-white">SKETCH PAD</p>
                     </div>
                 )}
                 <div className="flex gap-4 justify-center flex-wrap">
                     <button
                         onClick={() => navigate('/')}
-                        className="px-8 py-3 rounded-full bg-white text-blue-900 font-bold shadow-lg hover:shadow-cyan-400/40 transition-all duration-300 hover:-translate-y-0.5"
+                        className="px-6 py-2 rounded-full bg-white text-blue-900 font-bold text-sm shadow-lg hover:shadow-cyan-400/40 transition-all duration-300 hover:-translate-y-0.5"
                     >
                         Back to Home
                     </button>
                     <button
                         onClick={() => navigate('/gift')}
-                        className="px-8 py-3 rounded-full border border-white/60 text-white font-bold shadow-lg hover:bg-white/15 transition-all duration-300 hover:-translate-y-0.5"
+                        className="px-6 py-2 rounded-full border border-white/60 text-white font-bold text-sm shadow-lg hover:bg-white/15 transition-all duration-300 hover:-translate-y-0.5"
                     >
                         Back to Gifts
                     </button>

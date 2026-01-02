@@ -9,30 +9,30 @@ export default function Dedication(): JSX.Element {
                 {/* Heart Animation */}
                 <div className="mb-8">
                     <div className="text-5xl animate-pulse mb-6"></div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
                         For You, Marcel ...
                     </h2>
                 </div>
 
                 {/* Dedication Message */}
                 <div className="bg-white bg-opacity-15 backdrop-blur-md rounded-3xl p-6 mb-8 border-2 border-white border-opacity-40 shadow-2xl md:p-12">
-                    <p className="text-xl text-white font-light mb-4 leading-relaxed">
+                    <p className="text-sm md:text-base text-white font-light mb-4 leading-relaxed">
                         Marcel, on this special day, I want you to know...
                     </p>
 
                     <div className="space-y-4 mb-8">
-                        <p className="text-xl text-white font-light leading-relaxed">
+                        <p className="text-sm md:text-base text-white font-light leading-relaxed">
                             You are the light that brightens my darkest days,
                         </p>
-                        <p className="text-xl text-white font-light leading-relaxed">
+                        <p className="text-sm md:text-base text-white font-light leading-relaxed">
                             The warmth that melts away the cold,
                         </p>
-                        <p className="text-xl text-white font-light leading-relaxed">
+                        <p className="text-sm md:text-base text-white font-light leading-relaxed">
                             The reason my heart smiles every single day.
                         </p>
                     </div>
 
-                    <p className="text-xl text-white font-light mb-4 leading-relaxed">
+                    <p className="text-sm md:text-base text-white font-light mb-4 leading-relaxed">
                         Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 💙
                     </p>
 
@@ -54,7 +54,7 @@ export default function Dedication(): JSX.Element {
                 {/* Back Button */}
                 <button
                     onClick={() => navigate('/')}
-                    className="px-8 py-4 bg-cyan-400 text-blue-900 font-bold text-lg rounded-full hover:bg-cyan-300 transition-all duration-300 transform hover:scale-105 active:scale-95 drop-shadow-lg"
+                    className="px-6 py-4 bg-cyan-400 text-blue-900 font-bold text-base rounded-full hover:bg-cyan-300 transition-all duration-300 transform hover:scale-105 active:scale-95 drop-shadow-lg"
                 >
                     ← Back to Home
                 </button>
