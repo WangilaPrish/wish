@@ -59,19 +59,19 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                         <div className="flex gap-4 justify-center flex-wrap">
                             <button
                                 onClick={handleFirstYes}
-                                className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
+                                className="group relative px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 animate-slide-shine"></div>
-                                <span className="relative text-lg">Yes! 😊</span>
+                                <span className="relative text-base">Yes! 😊</span>
                             </button>
                             <button
                                 onClick={() => setShowFirstNo(true)}
-                                className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden"
+                                className="group relative px-6 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 <span className="relative">
-                                    <div className="text-lg">No 😢</div>
+                                    <div className="text-base">No 😢</div>
                                     {showFirstNo && (
                                         <div className="text-sm mt-2 transition-all duration-500 animate-fade-in">
                                             I thought you gonna love it... 💔
@@ -85,7 +85,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
 
                 {step === 'question2' && (
                     <div className="text-center animate-slide-up relative z-10">
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 animate-glow">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 animate-glow">
                             Was this the best ever?
                         </h2>
                         <div className="flex gap-4 justify-center flex-wrap">
