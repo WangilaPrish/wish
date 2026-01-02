@@ -36,11 +36,32 @@ export default function Dedication(): JSX.Element {
                         Happy Birthday to the one who means everything to me ✨
                     </div>
 
-                    <p className="text-lg text-white font-light">
+                    <p className="text-lg text-white font-light mb-8">
                         Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 🎊💕
                     </p>
 
+                    {/* YouTube Video Embed */}
+                    <div className="mt-8 mb-6">
+                        <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-cyan-400 border-opacity-30">
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/fjrhE7fmdBA"
+                                title="Birthday Video for Marcel"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                        <p className="text-sm text-cyan-200 mt-3">🎵 A special song just for you</p>
+                    </div>
+
                     {/* Decorative Elements */}
+                    <div className="grid grid-cols-5 gap-2 mt-6 text-3xl">
+                        <div className="animate-bounce" style={{ animationDelay: '0s' }}>💕</div>
+                        <div className="animate-bounce" style={{ animationDelay: '0.1s' }}>💫</div>
+                        <div className="animate-bounce" style={{ animationDelay: '0.2s' }}>💕</div>
+                        <div className="animate-bounce" style={{ animationDelay: '0.3s' }}>💫</div>
+                        <div className="animate-bounce" style={{ animationDelay: '0.4s' }}>💕</div>
+                    </div>
 
                 </div>
 
