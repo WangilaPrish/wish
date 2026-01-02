@@ -7,14 +7,14 @@ export default function Landing(): JSX.Element {
     const navigate = useNavigate()
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-700 flex items-center justify-center p-4">
             <div className="text-center max-w-4xl w-full">
                 {/* Animated Title */}
                 <div className="mb-8 animate-bounce">
                     <h1 className="text-6xl md:text-7xl font-bold text-white mb-2 drop-shadow-lg">
                         Happy Birthday
                     </h1>
-                    <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent drop-shadow-lg">
+                    <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent drop-shadow-lg">
                         Marcel 🎉
                     </h2>
                 </div>
@@ -31,11 +31,11 @@ export default function Landing(): JSX.Element {
                         onClick={() => navigate('/gift')}
                         className="group relative px-8 py-6 text-xl font-bold text-white rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 active:scale-95"
                         style={{
-                            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)',
+                            background: 'linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%)',
+                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.5)',
                         }}
                     >
-                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                         <span className="relative block text-4xl mb-2">🎁</span>
                         <span className="relative">Your Gift</span>
                     </button>
@@ -45,11 +45,11 @@ export default function Landing(): JSX.Element {
                         onClick={() => navigate('/dedication')}
                         className="group relative px-8 py-6 text-xl font-bold text-white rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 active:scale-95"
                         style={{
-                            background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)',
+                            background: 'linear-gradient(135deg, #0369a1 0%, #0284c7 100%)',
+                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.5)',
                         }}
                     >
-                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                         <span className="relative block text-4xl mb-2">💝</span>
                         <span className="relative">Dedication</span>
                     </button>
@@ -59,11 +59,11 @@ export default function Landing(): JSX.Element {
                         onClick={() => setShowPopup(true)}
                         className="group relative px-8 py-6 text-xl font-bold text-white rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 active:scale-95"
                         style={{
-                            background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)',
+                            background: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
+                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.5)',
                         }}
                     >
-                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                         <span className="relative block text-4xl mb-2">💬</span>
                         <span className="relative">Pop-Up</span>
                     </button>

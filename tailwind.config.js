@@ -6,8 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#667eea',
-        secondary: '#764ba2',
+        primary: '#1e3a8a',
+        secondary: '#1e40af',
+        accent: '#0284c7',
       },
       animation: {
         'fall': 'fall 2s linear forwards',
