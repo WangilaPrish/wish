@@ -15,6 +15,8 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
     const [step, setStep] = useState<PopupStep>('question1')
     const [fallingHearts, setFallingHearts] = useState<FallingHeart[]>([])
     const [heartCounter, setHeartCounter] = useState(0)
+    const [showFirstNo, setShowFirstNo] = useState(false)
+    const [showSecondNo, setShowSecondNo] = useState(false)
 
     const dropHearts = (): void => {
         const hearts: FallingHeart[] = Array.from({ length: 15 }, (_, i) => ({
@@ -85,16 +87,15 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                                 Yes! 😊
                             </button>
                             <button
-                                onClick={() => setStep('question1')}
+                                onClick={() => setShowFirstNo(true)}
                                 className="px-8 py-3 bg-gradient-to-r from-red-400 to-red-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
                             >
                                 <div>No 😢</div>
-                                <div
-                                    className={`text-sm mt-2 transition-all duration-500 overflow-hidden ${step === 'question1' ? 'max-h-20 opacity-100' : 'max-h-0 opacity-0'
-                                        }`}
-                                >
-                                    I thought you gonna love it... 💔
-                                </div>
+                                {showFirstNo && (
+                                    <div className="text-sm mt-2 transition-all duration-500 animate-fade-in">
+                                        I thought you gonna love it... 💔
+                                    </div>
+                                )}
                             </button>
                         </div>
                     </div>
@@ -114,16 +115,15 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                                 Yes! 🎉
                             </button>
                             <button
-                                onClick={() => setStep('question2')}
+                                onClick={() => setShowSecondNo(true)}
                                 className="px-8 py-3 bg-gradient-to-r from-red-400 to-red-500 text-white font-bold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
                             >
                                 <div>No 😅</div>
-                                <div
-                                    className={`text-sm mt-2 transition-all duration-500 overflow-hidden ${step === 'question2' ? 'max-h-20 opacity-100' : 'max-h-0 opacity-0'
-                                        }`}
-                                >
-                                    My bad 🤭
-                                </div>
+                                {showSecondNo && (
+                                    <div className="text-sm mt-2 transition-all duration-500 animate-fade-in">
+                                        My bad 🤭
+                                    </div>
+                                )}
                             </button>
                         </div>
                     </div>
