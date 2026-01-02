@@ -54,15 +54,6 @@ export default function Dedication(): JSX.Element {
                         <p className="text-sm text-cyan-200 mt-3">🎵 A special song just for you</p>
                     </div>
 
-                    {/* Decorative Elements */}
-                    <div className="grid grid-cols-5 gap-2 mt-6 text-3xl">
-                        <div className="animate-bounce" style={{ animationDelay: '0s' }}>💕</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.1s' }}>💫</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.2s' }}>💕</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.3s' }}>💫</div>
-                        <div className="animate-bounce" style={{ animationDelay: '0.4s' }}>💕</div>
-                    </div>
-
                 </div>
 
                 {/* Back Button */}
