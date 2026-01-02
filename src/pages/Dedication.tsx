@@ -10,7 +10,7 @@ export default function Dedication(): JSX.Element {
                 <div className="mb-8">
                     <div className="text-5xl animate-pulse mb-6"></div>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-                        For You, Marcel
+                        For You, Marcel ...
                     </h2>
                 </div>
 

@@ -24,9 +24,29 @@ export default function Gift(): JSX.Element {
                         The gift of knowing how much you mean to me
                     </div>
 
-                    <p className="text-xl text-white font-light mb-8">
-                        You make every moment brighter, every day better, and every memory unforgettable. Your smile, your laugh, your presence—that's the best gift in the world to me. �
+                    <p className="text-xl text-white font-light mb-6 leading-relaxed">
+                        I really had a hard time figuring out what to give you because I felt I have given you everything you have ever wanted. Although that was the case, of course I remember the things you ever wanted that you even mentioned once to me. Others are just things I saw you need based on your interests. This website being one of the gifts, I hope you love it handsome.
                     </p>
+
+                    <p className="text-xl text-white font-light mb-6 leading-relaxed">
+                        It really wasn't that easy to make it work how I want it, but here it is. If you want to get the gifts, you must first answer this question:
+                    </p>
+
+                    <div className="text-white text-2xl font-bold mb-6 drop-shadow-lg">
+                        Do you like the website I made for you, Marcel?
+                    </div>
+
+                    {/* Yes/No Buttons */}
+                    <div className="flex gap-4 justify-center mb-6">
+                        <button className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden">
+                            <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                            <span className="relative text-lg">Yes! 💙</span>
+                        </button>
+                        <button className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden">
+                            <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                            <span className="relative text-lg">No 😢</span>
+                        </button>
+                    </div>
 
                     {/* Confetti-like elements */}
                     <div className="grid grid-cols-4 gap-4 mb-8">
