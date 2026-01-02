@@ -39,10 +39,9 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
             <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-900 rounded-3xl shadow-2xl p-8 md:p-12 max-w-md w-full z-10 backdrop-blur-sm border-2 border-cyan-400 border-opacity-40 animate-modal-pop relative overflow-hidden">
                 {/* Animated background effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-10 animate-shimmer"></div>
-                
+
                 {step === 'question1' && (
                     <div className="text-center animate-slide-up relative z-10">
-                        <div className="text-7xl mb-6 animate-bounce-slow">🎂</div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 animate-glow">
                             Did you like your birthday?
                         </h2>
