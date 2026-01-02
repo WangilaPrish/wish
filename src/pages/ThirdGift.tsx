@@ -1,9 +1,15 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function ThirdGift(): JSX.Element {
     const navigate = useNavigate()
     const touchStartX = useRef<number | null>(null)
+    const [showYogaMat, setShowYogaMat] = useState(false)
+
+    useEffect(() => {
+        const timer = window.setTimeout(() => setShowYogaMat(true), 120000)
+        return () => window.clearTimeout(timer)
+    }, [])
 
     const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
         touchStartX.current = event.touches[0]?.clientX ?? null
@@ -49,10 +55,16 @@ export default function ThirdGift(): JSX.Element {
 
             <div className="max-w-3xl w-full bg-white/12 backdrop-blur-xl border border-white/25 rounded-3xl shadow-2xl p-10 text-center text-white">
                 <p className="text-sm uppercase tracking-[0.3em] text-emerald-200 mb-4">Third Gift</p>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-xl">The final surprise 🌟</h1>
-                <p className="text-lg md:text-xl leading-relaxed text-white/90 mb-8">
-                    The journey ends here with a special last gift. I hope each one made you feel loved and celebrated.
+                <p className="text-base md:text-lg leading-relaxed text-white/90 mb-8">
+                    So this is the ultimate gift, I know you are so curious but before i give u lemme give u a back story of it......
+                    our fvcking life has been so amazing offlate and ofc we want to take things a notch higher. i bought this gift with me giving you a BJ in mind. How i do love your abs and how i want you ro make them more visible. So you better get at work and get them abs visible daddy.
+                    Now turn and get your final gift. I love you Marcel, so muchhhhh......
                 </p>
+                {showYogaMat && (
+                    <div className="mt-6 rounded-2xl border border-emerald-200/60 bg-white/10 px-6 py-4 mb-4 text-center shadow-lg backdrop-blur">
+                        <p className="text-lg font-semibold tracking-wide text-white">YOGA MAT</p>
+                    </div>
+                )}
                 <div className="flex gap-4 justify-center flex-wrap">
                     <button
                         onClick={() => navigate('/')}
