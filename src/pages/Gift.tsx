@@ -16,13 +16,6 @@ export default function Gift(): JSX.Element {
 
                 {/* Gift Message */}
                 <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-3xl p-10 mb-8 border-2 border-white border-opacity-30">
-                    <p className="text-2xl text-white font-light mb-6 leading-relaxed">
-                        This year, I wanted to give you something truly special. The greatest gift I can give you is...
-                    </p>
-
-                    <div className="text-white text-3xl font-bold mb-6 drop-shadow-lg">
-                        The gift of knowing how much you mean to me
-                    </div>
 
                     <p className="text-xl text-white font-light mb-6 leading-relaxed">
                         I really had a hard time figuring out what to give you because I felt I have given you everything you have ever wanted. Although that was the case, of course I remember the things you ever wanted that you even mentioned once to me. Others are just things I saw you need based on your interests. This website being one of the gifts, I hope you love it handsome.
@@ -48,13 +41,6 @@ export default function Gift(): JSX.Element {
                         </button>
                     </div>
 
-                    {/* Confetti-like elements */}
-                    <div className="grid grid-cols-4 gap-4 mb-8">
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0s' }}>�</div>
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.1s' }}>💙</div>
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.2s' }}>💙</div>
-                        <div className="text-4xl animate-bounce" style={{ animationDelay: '0.3s' }}>💙</div>
-                    </div>
                 </div>
 
                 {/* Back Button */}
