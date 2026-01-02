@@ -1,7 +1,14 @@
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function FirstGift(): JSX.Element {
     const navigate = useNavigate()
+    const [showSketchPad, setShowSketchPad] = useState(false)
+
+    useEffect(() => {
+        const timer = window.setTimeout(() => setShowSketchPad(true), 60000)
+        return () => window.clearTimeout(timer)
+    }, [])
 
     return (
         <div className="relative min-h-screen bg-gradient-to-br from-cyan-700 via-blue-900 to-blue-950 flex items-center justify-center p-6">
@@ -26,6 +33,11 @@ export default function FirstGift(): JSX.Element {
                 <p className="text-base md:text-lg leading-relaxed text-white/90 mb-8">
                     You are a great artist, Marcel. I don&apos;t know why you rarely do your sketches, but don&apos;t worry—this first gift is for you to grow your talent. Make as many sketches as possible; I want to see them, of course. You are talented, Marcel. ❤️ Now look back to have your first gift.
                 </p>
+                {showSketchPad && (
+                    <div className="mt-6 rounded-2xl border border-cyan-200/60 bg-white/10 px-6 py-4 mb-4 text-center shadow-lg backdrop-blur">
+                        <p className="text-lg font-semibold tracking-wide text-white">SKETCH PAD</p>
+                    </div>
+                )}
                 <div className="flex gap-4 justify-center flex-wrap">
                     <button
                         onClick={() => navigate('/')}
