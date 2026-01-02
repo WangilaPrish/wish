@@ -32,8 +32,6 @@ export default function Dedication(): JSX.Element {
                         </p>
                     </div>
 
-
-
                     <p className="text-lg text-white font-light mb-4">
                         Thank you for being you. Thank you for all the love, laughter, and memories we share. You deserve the most amazing birthday ever! 🎊💕
                     </p>
