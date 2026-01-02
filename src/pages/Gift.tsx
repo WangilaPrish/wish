@@ -1,11 +1,56 @@
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Gift(): JSX.Element {
+    const [showPopup, setShowPopup] = useState(false)
+    const [showUngrateful, setShowUngrateful] = useState(false)
+    const timeoutRef = useRef<number | null>(null)
     const navigate = useNavigate()
+
+    useEffect(() => {
+        return () => {
+            if (timeoutRef.current !== null) {
+                window.clearTimeout(timeoutRef.current)
+            }
+        }
+    }, [])
+
+    const handleYes = () => {
+        setShowUngrateful(false)
+        setShowPopup(true)
+
+        if (timeoutRef.current !== null) {
+            window.clearTimeout(timeoutRef.current)
+        }
+
+        timeoutRef.current = window.setTimeout(() => {
+            navigate('/gift/first')
+        }, 1400)
+    }
+
+    const handleNo = () => {
+        setShowPopup(false)
+        setShowUngrateful(true)
+
+        if (timeoutRef.current !== null) {
+            window.clearTimeout(timeoutRef.current)
+            timeoutRef.current = null
+        }
+    }
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-700 flex items-center justify-center p-4">
             <div className="max-w-2xl w-full text-center">
+                {showPopup && (
+                    <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-20">
+                        <div className="bg-white/90 text-blue-950 rounded-3xl p-8 shadow-2xl max-w-md w-full border border-white/60">
+                            <h2 className="text-3xl font-bold mb-4">Awesome!</h2>
+                            <p className="text-lg mb-3">Let&apos;s move on to the first gift.</p>
+                            <p className="text-sm text-blue-900/70">Hang tight, taking you there now…</p>
+                        </div>
+                    </div>
+                )}
+
                 {/* Gift Box Animation */}
                 <div className="mb-8">
 
@@ -31,15 +76,27 @@ export default function Gift(): JSX.Element {
 
                     {/* Yes/No Buttons */}
                     <div className="flex gap-4 justify-center mb-6">
-                        <button className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden">
+                        <button
+                            onClick={handleYes}
+                            className="group relative px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
+                        >
                             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                             <span className="relative text-lg">Yes!</span>
                         </button>
-                        <button className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden">
+                        <button
+                            onClick={handleNo}
+                            className="group relative px-10 py-4 bg-blue-900/50 backdrop-blur-sm border-2 border-cyan-400/50 text-white font-bold rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 active:scale-95 overflow-hidden"
+                        >
                             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                             <span className="relative text-lg">No</span>
                         </button>
                     </div>
+
+                    {showUngrateful && (
+                        <div className="text-lg font-semibold text-white drop-shadow-lg">
+                            You are ungrateful.
+                        </div>
+                    )}
 
                 </div>
 
