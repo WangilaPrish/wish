@@ -6,11 +6,6 @@ interface BirthdayPopupProps {
 
 type PopupStep = 'question1' | 'question2' | 'falling_hearts' | 'final_message'
 
-interface FallingHeart {
-    id: number
-    left: number
-}
-
 export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Element {
     const [step, setStep] = useState<PopupStep>('question1')
     const [showFirstNo, setShowFirstNo] = useState(false)
