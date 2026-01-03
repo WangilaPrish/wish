@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
 import type { JSX } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function ThirdGift(): JSX.Element {
@@ -58,7 +58,7 @@ export default function ThirdGift(): JSX.Element {
                 <p className="text-sm uppercase tracking-[0.3em] text-emerald-200 mb-4">Third Gift</p>
                 <p className="text-base md:text-lg leading-relaxed text-white/90 mb-8">
                     So this is the ultimate gift, I know you are so curious but before i give u lemme give u a back story of it......
-                    our fvcking life has been so amazing offlate and ofc we want to take things a notch higher. i bought this gift with me giving you a BJ in mind. How i do love your abs and how i want you ro make them more visible. So you better get at work and get them abs visible daddy.
+                    our fvcking life has been so amazing offlate and ofc we want to take things a notch higher. i bought this gift with me giving you a BJ in mind. How i do love your abs and how i want you to make them more visible. So you better get at work and get them abs visible daddy.
                     Now turn and get your final gift. I love you Marcel, so muchhhhh......
                 </p>
                 {showYogaMat && (

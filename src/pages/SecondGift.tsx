@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
 import type { JSX } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function SecondGift(): JSX.Element {
