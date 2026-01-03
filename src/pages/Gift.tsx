@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { type JSX, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Gift(): JSX.Element {

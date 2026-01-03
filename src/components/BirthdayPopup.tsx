@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type JSX, type MouseEvent, useState } from 'react'
 
 interface BirthdayPopupProps {
     onClose: () => void
@@ -19,7 +19,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
         setStep('final_message')
     }
 
-    const handleBackdropClick = (e: React.MouseEvent): void => {
+    const handleBackdropClick = (e: MouseEvent): void => {
         if (e.target === e.currentTarget) {
             onClose()
         }

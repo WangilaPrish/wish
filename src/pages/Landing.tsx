@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type JSX, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import BirthdayPopup from '../components/BirthdayPopup'
 
@@ -20,12 +20,7 @@ export default function Landing(): JSX.Element {
                 </div>
 
                 {/* Subtitle */}
-                <div
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="max-w-4xl mx-auto mb-8"
-                >
+                <div className="max-w-4xl mx-auto mb-8">
                     <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-8 sm:p-10 md:p-12 lg:p-14 border border-white/10 hover:border-white/20 transition-all duration-500 hover:shadow-blue-500/10 hover:shadow-[0_0_50px]">
                         <div className="space-y-6">
                             <p className="text-white/95 text-sm sm:text-base md:text-lg leading-relaxed font-light">

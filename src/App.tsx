@@ -1,3 +1,4 @@
+import type { JSX } from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Dedication from './pages/Dedication'
 import FirstGift from './pages/FirstGift'
