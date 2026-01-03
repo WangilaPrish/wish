@@ -118,14 +118,7 @@ export default function BirthdayPopup({ onClose }: BirthdayPopupProps): JSX.Elem
                         <p className="text-base md:text-lg text-cyan-100 mb-8">
                             Happy Birthday to the most amazing person in my life! 🎊🎉
                         </p>
-                        <button
-                            onClick={onClose}
-                            className="group relative px-6 py-4 bg-gradient-to-r from-cyan-400 to-blue-400 text-blue-900 font-bold text-base rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/50 active:scale-95 overflow-hidden"
-                        >
-                            <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-50 animate-slide-shine"></div>
-                            <span className="relative">Back to Home</span>
-                        </button>
+
                     </div>
                 )}
             </div>
