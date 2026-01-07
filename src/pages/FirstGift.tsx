@@ -24,7 +24,7 @@ export default function FirstGift(): JSX.Element {
         const threshold = 48
 
         if (delta > threshold) {
-            navigate('/gift/third')
+            navigate('/gift/fourth')
         } else if (delta < -threshold) {
             navigate('/gift/second')
         }
@@ -39,7 +39,7 @@ export default function FirstGift(): JSX.Element {
             onTouchEnd={handleTouchEnd}
         >
             <button
-                onClick={() => navigate('/gift/third')}
+                onClick={() => navigate('/gift/fourth')}
                 className="hidden md:flex items-center justify-center absolute left-4 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white/80 text-blue-900 text-2xl font-bold shadow-lg border border-white/60 hover:-translate-y-[52%] hover:shadow-cyan-300/50 transition-all duration-300"
                 aria-label="Previous gift"
             >

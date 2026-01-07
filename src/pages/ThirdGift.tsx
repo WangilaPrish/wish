@@ -26,7 +26,7 @@ export default function ThirdGift(): JSX.Element {
         if (delta > threshold) {
             navigate('/gift/second')
         } else if (delta < -threshold) {
-            navigate('/gift/first')
+            navigate('/gift/fourth')
         }
 
         touchStartX.current = null
@@ -47,7 +47,7 @@ export default function ThirdGift(): JSX.Element {
             </button>
 
             <button
-                onClick={() => navigate('/gift/first')}
+                onClick={() => navigate('/gift/fourth')}
                 className="hidden md:flex items-center justify-center absolute right-4 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white/85 text-emerald-900 text-2xl font-bold shadow-lg border border-white/60 hover:-translate-y-[52%] hover:shadow-emerald-300/50 transition-all duration-300"
                 aria-label="Next gift"
             >
@@ -57,7 +57,7 @@ export default function ThirdGift(): JSX.Element {
             <div className="max-w-3xl w-full bg-white/12 backdrop-blur-xl border border-white/25 rounded-3xl shadow-2xl p-10 text-center text-white">
                 <p className="text-sm uppercase tracking-[0.3em] text-emerald-200 mb-4">Third Gift</p>
                 <p className="text-base md:text-lg leading-relaxed text-white/90 mb-8">
-                    So this is the ultimate gift, I know you are so curious but before i give u lemme give u a back story of it......
+                    So this is the third gift, I know you are so curious but before i give u lemme give u a back story of it......
                     our fvcking life has been so amazing offlate and ofc we want to take things a notch higher. i bought this gift with me giving you a BJ in mind. How i do love your abs and how i want you to make them more visible. So you better get at work and get them abs visible daddy.
                     Now turn and get your final gift. I love you Marcel, so muchhhhh......
                 </p>
