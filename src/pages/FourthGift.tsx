@@ -58,7 +58,7 @@ export default function FourthGift(): JSX.Element {
                 <p className="text-sm uppercase tracking-[0.3em] text-amber-200 mb-4">Fourth Gift</p>
                 <p className="text-base md:text-lg leading-relaxed text-white/90 mb-8">
                     Last and final gift for your sweet 22...
-                    You wanted to taste how your name tastes so bad and ofc I had to make it happen. I didn&apos;t get the red one but white will still do.
+                    You wanted to taste how your name tastes and ofc I had to make it happen. I didn&apos;t get the red one but white will still do.
                 </p>
                 {showName && (
                     <div className="mt-6 rounded-2xl border border-amber-200/60 bg-white/10 px-6 py-4 mb-4 text-center shadow-lg backdrop-blur">
